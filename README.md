@@ -15,7 +15,7 @@ https://github.com/divang/cdranalytics
     
     - Compile the code
         - cd /home/cloudera/Downloads/cdranalytics-master/src/main/java
-        - javac -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/* com/telecom/cdranalytics/STDSubscribers.java
+        - javac -cp .:/usr/lib/hadoop/* :/usr/lib/hadoop-mapreduce/* :/usr/lib/hbase/* com/telecom/cdranalytics/STDSubscribers.java
 
     - Make a jar
         - cd /home/cloudera/Downloads/cdranalytics-master/src/main/java
