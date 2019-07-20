@@ -44,20 +44,18 @@ https://github.com/divang/cdranalytics
     - Show the progress report
         - http://quickstart.cloudera:8088/cluster
        
-    - Reports
-        - All records of Users:
+    - Reports All records of Users:
         - comiple
-        javac -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*
+            - javac -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*
 com/telecom/cdranalytics/AllUserRecords.java
         - To view the Report:
-        java -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*:/usr/lib/hbase/lib/*
+            - java -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*:/usr/lib/hbase/lib/*
  com.telecom.cdranalytics.AllUserRecords
 
-        - Get Free pack eligible Users from HBase database: 
-
+    - Get Free pack eligible Users from HBase database: 
         - compile
-        javac -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*
+            - javac -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*
 com/telecom/cdranalytics/FreePackUser.java
         - To view the eligible User for free pack:
-        java -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*
-com.telecom.cdranalytics.FreePackUser
+            - java -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*
+com.telecom.cdranalytics.FreePackUser 500
