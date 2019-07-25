@@ -6,4 +6,7 @@ public class CDRConstants {
 	public static int callStartTime = 2;
 	public static int callEndTime = 3;
 	public static int STDFlag = 4;
+	public static int callerState = 5;
+	public static int callerCity = 6;
+	public static int callerPincode = 7;
 }
