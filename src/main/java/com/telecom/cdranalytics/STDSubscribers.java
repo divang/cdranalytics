@@ -66,6 +66,12 @@ public class STDSubscribers {
 		PincodeFilter pincodeFilter = new PincodeFilter();
 		CityFilter cityFilter = new CityFilter();
 		
+		 protected void setup(Context context) throws IOException, InterruptedException {
+			stateFilter.init();
+			pincodeFilter.init();
+			cityFilter.init();
+		 }
+
 		private long toMillis(String date) {
 
 			SimpleDateFormat format = new SimpleDateFormat(
