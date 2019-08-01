@@ -52,4 +52,4 @@ Get Free pack eligible Users from HBase database:
 compile
 javac -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/* com/telecom/cdranalytics/FreePackUser.java
 To view the eligible User for free pack:
-java -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/* com.telecom.cdranalytics.FreePackUser 500
+java -cp .:/usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/*:/usr/lib/hbase/lib/* com.telecom.cdranalytics.FreePackUser 500
