@@ -45,10 +45,6 @@ public class STDSubscribers {
 		
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 
-		Scan scan = new Scan();
-		scan.setCaching(500);        // 1 is the default in Scan, which will be bad for MapReduce jobs
-		scan.setCacheBlocks(false);  // don't set to true for MR jobs
-
 		TableMapReduceUtil.initTableReducerJob(
 				targetTable,        // output table
 				PromotedFreeUserReducer.class,    // reducer class
