@@ -20,7 +20,7 @@ https://github.com/divang/cdranalytics
 
     - Make a jar
         - cd /home/cloudera/Downloads/cdranalytics-master/src/main/java
-        - jar -cvf cdrAnalytics.jar com/telecom/cdranalytics/*.class
+        - jar -cvf cdrAnalytics.jar com/telecom/cdranalytics/*.class com/telecom/cdranalytics/filters/*.class
 
     - HDFS
         - cd /home/cloudera/Downloads/cdranalytics-master
