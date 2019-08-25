@@ -24,8 +24,7 @@ https://github.com/divang/cdranalytics
 
     - HDFS
         - cd /home/cloudera/Downloads/cdranalytics-master
-        - hdfs dfs -mkdir cdr_logs
-        - hdfs dfs -copyFromLocal cdr.txt cdr_logs
+        - hdfs dfs -copyFromLocal cdr.txt .
 
     - Hbase
         - hbase shell
@@ -35,8 +34,8 @@ https://github.com/divang/cdranalytics
 
     - Hadoop Map/Reduce Job submission
         - cd /home/cloudera/Downloads/cdranalytics-master/src/main/java
-        - export HADOOP_CLASSPATH=/usr/lib/hadoop/* :/usr/lib/hbase/* :/usr/lib/hadoop-mapreduce/* :/usr/lib/hbase/lib/*
-        - hadoop jar cdrAnalytics.jar com.telecom.cdranalytics.STDSubscribers cdr_logs/cdr.txt
+        - export HADOOP_CLASSPATH=/usr/lib/hadoop/*:/usr/lib/hbase/*:/usr/lib/hadoop-mapreduce/*:/usr/lib/hbase/lib/*
+        - hadoop jar cdrAnalytics.jar com.telecom.cdranalytics.STDSubscribers cdr.txt
 
     - Job has done
         - hbase shell
